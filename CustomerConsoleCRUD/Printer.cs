@@ -1,17 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Core.ApplicationService;
 using Core.DomainService;
 using Core.Entity;
 using Static.Data.Repositories;
 
 namespace CustomerConsoleCRUD
 {
-    public class Printer
+    public class Printer: IPrinter
     {
-        private ICustomerRepository customerRepository;
+        private readonly ICustomerService _customerService;
 
-        public Printer()
+        public Printer(ICustomerService customerService)
         {
-            customerRepository = new CustomerRepository();
+            _customerService = customerService;
+            InitData();
+        }
+        
+        private void InitData()
+        {
             Customer customer = new Customer
             {
                 FirstName = "Bob",
@@ -26,12 +34,12 @@ namespace CustomerConsoleCRUD
                 Address = "Koningsgade"
             };
 
-            customerRepository.Create(customer);
-            customerRepository.Create(customer2);
+            _customerService.CreateCustomer(customer);
+            _customerService.CreateCustomer(customer2);
+        }
 
-            Console.WriteLine($"Name: {customer.FirstName} {customer.LastName}");
-
-
+        public void StartUI()
+        {
             string[] menuItems =
             {
                 "List All Customers",
@@ -47,16 +55,35 @@ namespace CustomerConsoleCRUD
                 switch (selection)
                 {
                     case 1:
-                        ListCustomers();
+                        var customers = _customerService.GetAllCustomers();
+                        ListCustomers(customers);
                         break;
                     case 2:
-                        AddCustomers();
+                        var firstName = AskQuestion("Firstname:");
+                        var lastName = AskQuestion("Lastname:");
+                        var address = AskQuestion("Address:");
+                        var customerAdd = _customerService.NewCustomer(firstName,lastName,address);
+                        _customerService.CreateCustomer(customerAdd);
                         break;
                     case 3:
-                        DeleteCustomers();
+                        var idForDelete = PrintFindCustomerId();
+                        _customerService.DeleteCustomer(idForDelete);
                         break;
                     case 4:
-                        EditCustomer();
+                        var idForEdit = PrintFindCustomerId();
+                        var customerToEdit = _customerService.FindCustomerById(idForEdit);
+                        Console.WriteLine("Updating" + customerToEdit.FirstName + " " + customerToEdit.LastName);
+                        var newFirstName = AskQuestion("Firstname: ");
+                        var newLastName = AskQuestion("Lastname: ");
+                        var newAddress = AskQuestion("Address: "); 
+                        _customerService.UpdateCustomer(
+                            new Customer()
+                            {
+                                Id = idForEdit,
+                                FirstName = newFirstName,
+                                LastName = newLastName,
+                                Address = newAddress
+                            });
                         break;
                     default:
                         break;
@@ -67,27 +94,10 @@ namespace CustomerConsoleCRUD
 
             Console.WriteLine("Exited");
             Console.ReadLine();
-
-
         }
 
-        private void EditCustomer()
-        {
-            var customer = FindCustomerById();
-            Console.WriteLine("Customer to be edited");
-            Console.WriteLine($"Name: {customer.FirstName} {customer.LastName} Address: {customer.Address}");
-            Console.WriteLine("FirstName: ");
-            customer.FirstName = Console.ReadLine();
-
-            Console.WriteLine("LastName: ");
-            customer.LastName = Console.ReadLine();
-
-            Console.WriteLine("Address: ");
-            customer.Address = Console.ReadLine();
-
-        }
-
-        private Customer FindCustomerById()
+        //UI
+        int PrintFindCustomerId()
         {
             Console.WriteLine("Insert Customer Id: ");
             int id;
@@ -96,51 +106,26 @@ namespace CustomerConsoleCRUD
                 Console.WriteLine("Please insert a number");
             }
 
-            return customerRepository.ReadById(id);
+            return id;
         }
-
-        private void DeleteCustomers()
+        
+        string AskQuestion(string question)
         {
-            var customerFound = FindCustomerById();
-
-            if (customerFound != null)
-            {
-                customerRepository.Delete(customerFound.Id);
-            }
+            Console.WriteLine(question); 
+            return Console.ReadLine();
         }
-
-        private void AddCustomers()
-        {
-            Console.WriteLine("First Name:");
-            var firstName = Console.ReadLine();
-
-            Console.WriteLine("Last Name:");
-            var lastName = Console.ReadLine();
-
-            Console.WriteLine("Address:");
-            var address = Console.ReadLine();
-
-            var customer = new Customer
-            {
-                FirstName = firstName,
-                LastName = lastName,
-                Address = address
-            };
-
-            customerRepository.Create(customer);
-        }
-
-        private void ListCustomers()
+        
+        private void ListCustomers(object o)
         {
             Console.WriteLine("\nList of Customers");
-            var customers = customerRepository.ReadAll();
+            var customers = _customerService.GetAllCustomers();
             foreach (var customer in customers)
             {
                 Console.WriteLine(
                     $"Id: {customer.Id} Name: {customer.FirstName} {customer.FirstName} Address: {customer.Address}");
             }
 
-            if (customers.Count == 0)
+            if (customers.Count() == 0)
             {
                 Console.WriteLine("No customers found. Please add new one.");
             }
@@ -167,5 +152,5 @@ namespace CustomerConsoleCRUD
 
             return selection;
         }
-        }
+    }
 }

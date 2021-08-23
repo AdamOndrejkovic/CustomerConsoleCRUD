@@ -1,0 +1,13 @@
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\bin\Debug\netstandard2.1\Core.deps.json
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\bin\Debug\netstandard2.1\Core.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\bin\Debug\netstandard2.1\Core.pdb
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\bin\Debug\netstandard2.1\Core.Entity.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\bin\Debug\netstandard2.1\Core.Entity.pdb
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\obj\Debug\netstandard2.1\Core.csproj.AssemblyReference.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\obj\Debug\netstandard2.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\obj\Debug\netstandard2.1\Core.csproj.CopyComplete
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\obj\Debug\netstandard2.1\Core.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core\obj\Debug\netstandard2.1\Core.pdb

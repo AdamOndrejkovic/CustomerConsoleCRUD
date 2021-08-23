@@ -29,7 +29,7 @@ namespace Static.Data.Repositories
             return null;
         }
 
-        public List<Customer> ReadAll()
+        public IEnumerable<Customer> ReadAll()
         {
             return _customers;
         }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "V0fKvouPQP63g3ABcdofuONwziAy1BnCGl22HQgz4pKtKOdlhVzQfjJL4vSUkijrCjK3EMyvMZmn+yOx6nhFtg==",
+  "dgSpecHash": "sGofVg7j8tk5EyfxpAwzYoW4HelYlZ16zz50nsz2DSk8aan7t1eua4rTDe0yNXflcoMfQcn0xPJ/4saGLRHZzg==",
   "success": true,
   "projectFilePath": "C:\\Users\\adamo\\RiderProjects\\CustomerConsoleCRUD\\CustomerConsoleCRUD\\CustomerConsoleCRUD.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\adamo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0-preview.7.21377.19\\microsoft.extensions.dependencyinjection.6.0.0-preview.7.21377.19.nupkg.sha512",
+    "C:\\Users\\adamo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0-preview.7.21377.19\\microsoft.extensions.dependencyinjection.abstractions.6.0.0-preview.7.21377.19.nupkg.sha512",
+    "C:\\Users\\adamo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-preview.7.21377.19\\system.runtime.compilerservices.unsafe.6.0.0-preview.7.21377.19.nupkg.sha512"
+  ],
   "logs": []
 }

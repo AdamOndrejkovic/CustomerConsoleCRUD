@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Static.Data/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "Core.Entity": "1.0.0"
+        },
+        "runtime": {
+          "Static.Data.dll": {}
+        }
+      },
+      "Core/1.0.0": {
+        "dependencies": {
+          "Core.Entity": "1.0.0"
+        },
+        "runtime": {
+          "Core.dll": {}
+        }
+      },
+      "Core.Entity/1.0.0": {
+        "runtime": {
+          "Core.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Static.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

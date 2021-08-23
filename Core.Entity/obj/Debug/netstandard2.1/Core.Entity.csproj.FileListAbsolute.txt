@@ -1,0 +1,10 @@
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\bin\Debug\netstandard2.1\Core.Entity.deps.json
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\bin\Debug\netstandard2.1\Core.Entity.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\bin\Debug\netstandard2.1\Core.Entity.pdb
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\obj\Debug\netstandard2.1\Core.Entity.csproj.AssemblyReference.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\obj\Debug\netstandard2.1\Core.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\obj\Debug\netstandard2.1\Core.Entity.AssemblyInfoInputs.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\obj\Debug\netstandard2.1\Core.Entity.AssemblyInfo.cs
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\obj\Debug\netstandard2.1\Core.Entity.csproj.CoreCompileInputs.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\obj\Debug\netstandard2.1\Core.Entity.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Core.Entity\obj\Debug\netstandard2.1\Core.Entity.pdb

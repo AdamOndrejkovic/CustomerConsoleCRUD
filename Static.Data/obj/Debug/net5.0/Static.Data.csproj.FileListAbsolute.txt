@@ -1,0 +1,17 @@
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\bin\Debug\net5.0\Static.Data.deps.json
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\bin\Debug\net5.0\Static.Data.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\bin\Debug\net5.0\ref\Static.Data.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\bin\Debug\net5.0\Static.Data.pdb
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\bin\Debug\net5.0\Core.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\bin\Debug\net5.0\Core.Entity.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\bin\Debug\net5.0\Core.Entity.pdb
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\bin\Debug\net5.0\Core.pdb
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\Static.Data.csproj.AssemblyReference.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\Static.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\Static.Data.AssemblyInfoInputs.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\Static.Data.AssemblyInfo.cs
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\Static.Data.csproj.CoreCompileInputs.cache
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\Static.Data.csproj.CopyComplete
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\Static.Data.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\ref\Static.Data.dll
+C:\Users\adamo\RiderProjects\CustomerConsoleCRUD\Static.Data\obj\Debug\net5.0\Static.Data.pdb
