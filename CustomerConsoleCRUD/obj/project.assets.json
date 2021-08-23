@@ -1,15 +1,72 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Core.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Core.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Core.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Entity.dll": {}
+        }
+      },
+      "Static.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Core.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Static.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Static.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
+    "Core.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Core.Entity/Core.Entity.csproj",
+      "msbuildProject": "../Core.Entity/Core.Entity.csproj"
+    },
+    "Static.Data/1.0.0": {
+      "type": "project",
+      "path": "../Static.Data/Static.Data.csproj",
+      "msbuildProject": "../Static.Data/Static.Data.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Core >= 1.0.0",
+      "Core.Entity >= 1.0.0",
+      "Static.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\adamo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\adamo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -20,25 +77,29 @@
       "packagesPath": "C:\\Users\\adamo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\adamo\\RiderProjects\\CustomerConsoleCRUD\\CustomerConsoleCRUD\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\adamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\adamo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\adamo\\RiderProjects\\CustomerConsoleCRUD\\Core.Entity\\Core.Entity.csproj": {
+              "projectPath": "C:\\Users\\adamo\\RiderProjects\\CustomerConsoleCRUD\\Core.Entity\\Core.Entity.csproj"
+            },
+            "C:\\Users\\adamo\\RiderProjects\\CustomerConsoleCRUD\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\adamo\\RiderProjects\\CustomerConsoleCRUD\\Core\\Core.csproj"
+            },
+            "C:\\Users\\adamo\\RiderProjects\\CustomerConsoleCRUD\\Static.Data\\Static.Data.csproj": {
+              "projectPath": "C:\\Users\\adamo\\RiderProjects\\CustomerConsoleCRUD\\Static.Data\\Static.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -65,7 +126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\adamo\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

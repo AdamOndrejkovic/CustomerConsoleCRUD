@@ -1,4 +1,4 @@
-﻿namespace CustomerConsoleCRUD
+﻿namespace Core.Entity
 {
     public class Customer
     {
